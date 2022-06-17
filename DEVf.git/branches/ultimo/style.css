@@ -1,0 +1,45 @@
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 15px) 10px repeat(6, 10px);
+    grid-template-rows: repeat(2, 15px) 10px repeat(2, 15px);
+    grid-template-areas: "area1 area1 area4 area5 area5 area5 area5 area5 area5"
+                         "area1 area1 area4 area5 area5 area5 area5 area5 area5"
+                         "area2 area2 area4 area6 area6 area6 area6 area6 area6"
+                         "area3 area3 area4 area7 area7 area7 area7 area7 area7"
+                         "area3 area3 area4 area7 area7 area7 area7 area7 area7";
+}
+
+.item1 {
+    grid-area: area1;
+    background: red;
+}
+
+.item2 {
+    grid-area: area2;
+    background: white;
+}
+
+.item3 {
+    grid-area: area3;
+    background: red;
+}
+
+.item4 {
+    grid-area: area4;
+    background: white;
+}
+
+.item5 {
+    grid-area: area5;
+    background: red;
+}
+
+.item6 {
+    grid-area: area6;
+    background: white;
+}
+
+.item7 {
+    grid-area: area7;
+    background: red;
+}
