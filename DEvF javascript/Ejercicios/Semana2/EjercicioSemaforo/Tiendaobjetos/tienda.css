@@ -1,0 +1,6 @@
+#productList {
+    display: flex;
+}
+.product {
+    padding: 10px;
+}

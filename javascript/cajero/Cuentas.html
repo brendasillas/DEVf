@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cajero Automatico</title>
+    <link rel="stylesheet" href="stylecuentas.css" />
+  </head>
+  <body style="background-color: mintcream">
+    <main class="main" id="main">
+      <section class="inicio hide" id="inicio">
+        <div class="inicio_header">
+          <h2>Seleccione una opcion</h2>
+        </div>
+        <div class="inicio_content d_column">
+          <button
+            type="button"
+            class="btn btn_l"
+            id="login_btn"
+            onclick="cargarPantallaLogin()"
+          >
+            Iniciar Sesion
+          </button>
+          <button
+            type="button"
+            class="btn btn_l"
+            id="crear_btn"
+            onclick="cargarPantallaCrear()"
+          >
+            Crear Cuenta
+          </button>
+        </div>
+      </section>
+
+      <section class="login hide" id="login">
+        <div class="login_header header_section">
+          <h2>Iniciar Sesión</h2>
+        </div>
+        <div class="login_content">
+          <form action="" class="login_form d_column" id="login_form">
+            <input
+              type="text"
+              class="input"
+              id="luser_input"
+              placeholder="Ingrese su usuario"
+              required
+            />
+            <input
+              type="password"
+              class="input"
+              id="lpassword_input"
+              placeholder="Ingrese su contraseña"
+              required
+            />
+
+            <div class="buttons">
+              <button type="button" class="btn btn_l" id="btn_iniciarsesion">
+                Iniciar Sesión
+              </button>
+              <button type="button" class="btn btn_l" id="btn_lcancelar">
+                Cancelar
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="register hide" id="registrar">
+        <div class="register_header header_section">
+          <h2>Crear Cuenta</h2>
+        </div>
+        <div class="register_content">
+          <form action="" class="register_form d_column" id="register_form">
+            <input
+              type="text"
+              class="input"
+              id="cuser_input"
+              placeholder="Ingrese su usuario"
+              required
+            />
+            <input
+              type="password"
+              class="input"
+              id="cpassword_input"
+              placeholder="Ingrese su contraseña"
+              required
+            />
+
+            <input
+              type="text"
+              class="input"
+              id="saldo_input"
+              placeholder="Ingrese su saldo"
+              required
+            />
+
+            <div class="buttons">
+              <button type="button" class="btn btn_l" id="btn_crearcuenta">
+                Crear Cuenta
+              </button>
+              <button type="button" class="btn btn_l" id="btn_ccancelar">
+                Cancelar
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="operaciones hide" id="operaciones">
+        <div class="operaciones_header header_section" id="operaciones_header">
+          <h2>Seleccione una operación</h2>
+        </div>
+        <div class="operaciones_content">
+          <h2 id="bienvenida"></h2>
+
+          <div class="operaciones_buttons">
+            <button class="btn btn_l" id="consultar_btn">Consultar</button>
+            <button class="btn btn_l" id="ingresar_btn">Ingresar</button>
+            <button class="btn btn_l" id="retirar_btn">Retirar</button>
+            <button class="btn btn_l" id="cerrar_btn">Cerrar Sesión</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="consultar hide" id="consultar">
+        <div class="consultar_header header_section">
+          <h2>Consultar Saldo</h2>
+        </div>
+        <div class="consultar_content">
+          <p id="text_consultar">Tu saldo actual es de:</p>
+          <button type="button" class="btn btn_l" id="btn_cregresar">
+            Regresar
+          </button>
+        </div>
+      </section>
+
+      <section class="ingresar hide" id="ingresar">
+        <div class="ingresar_header header_section">
+          <h2>Ingresar Monto</h2>
+        </div>
+        <div class="ingresar_content">
+          <p id="saldo_actual">Saldo actual:</p>
+          <form action="" class="ingresar_form" id="ingresar_form">
+            <input
+              type="text"
+              class="input"
+              id="monto_input"
+              placeholder="Cantidad a ingresar"
+            />
+            <p id="nuevo_saldo" class="hide"></p>
+            <div class="ingresar_buttons">
+              <button type="button" class="btn btn_l" id="btn_ingresar">
+                Ingresar
+              </button>
+              <button type="button" class="btn btn_l" id="btn_icancelar">
+                Cancelar
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="retirar hide" id="retirar">
+        <div class="retirar_header header_section">
+          <h2>Retirar Monto</h2>
+        </div>
+        <div class="retirar_content">
+          <p id="saldo_retirar">Saldo actual:</p>
+          <form action="" class="retirar_form" id="retirar_form">
+            <input
+              type="text"
+              class="input"
+              id="rmonto_input"
+              placeholder="Cantidad a retirar"
+            />
+
+            <div class="retirar_buttons">
+              <button type="button" class="btn btn_l" id="btn_retirar">
+                Retirar
+              </button>
+              <button type="button" class="btn btn_l" id="btn_rcancelar">
+                Cancelar
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="./cuentas.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+#image{
+    background-color:rgba(248, 250, 235, 0.952); 
+    opacity: 80%; padding: 7px;
+     text-align: center;
+      color: rgb(31, 93, 207); 
+      font-size: large;
+}
+
+#main{
+    background-color: rgba(46, 121, 206, 0.452);
+    margin-top: 0px; 
+      text-align: center;
+}
+
+#principal{
+margin-top: 0px; background-color: rgba(26, 89, 224, 0.075); padding: 50px 7px; text-align: center;
+}
+
+#principal.button{
+    margin-top: 0px;
+     background-color: rgba(37, 70, 143, 0.288);
+      padding: 50px 7px; 
+      text-align: center;
+       border-radius: 3px;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+
+.botonsesion{
+    border: 1px solid blue;
+    background-color:rgb(188, 223, 93);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 3px;
+}
+
+.cajeroMenu {
+    border: 1px solid rgba(0, 0, 255, 0.322);
+    background-color: rgba(56, 104, 194, 0.233);
+    color: rgba(22, 22, 196, 0.863);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    border-radius: 3px;
+    align-content: space-around;
+    display: block;
+    width: 30%;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 35%;
+
+}
+
+p{
+    font-family: fantasy
+
+}
+
+
+

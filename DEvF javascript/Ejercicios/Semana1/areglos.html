@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    //split
+    // me separe la cadena " Dios union libertad"
+    var string = "Dios union libertad"
+    console.log('using split', string.split(" "));
+
+    //slice
+    //dado el siguiente array [1.2.3.4.5.6.7.8] crear un nuevo arrazy con los numeros del 3-7
+    var numbers =[1,2,3,4,5,6,7,8];
+    var newnumbers = numbers.slice(2,7);
+    console.log('using slice',newnumbers)
+
+    //splice
+    //crear un nuevo array con los valores boolean y agregar un objeto dentro de el 
+    var arr =[10, [], true, false, 12 ,'Manzana'];
+    var newArr = arr.splice(2,2);
+    newArr.push({name: 'Carlos'});
+    console.log('using slice',newArr)
+</script>
+
+</body>
+</html>

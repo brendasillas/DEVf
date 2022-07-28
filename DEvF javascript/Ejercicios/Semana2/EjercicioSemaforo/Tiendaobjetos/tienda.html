@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Store</title>
+    <link rel="stylesheet" href="tienda.css">
+
+</head>
+<body>
+    <header>
+        <h1>Product List</h1>
+        <h3 id="total">Total: <span>$ 0</span></h3>
+        <form id="form">
+            <input type="text" id="search" placeholder="Search" name="search" onkeyup="searchproduct(event)">
+            <input type="submit" value="Search">
+        </form> 
+
+        <button id="reset">Reset</button>
+    </header>
+    <main id="productList">
+        
+    </main>
+    <footer>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody id="tableProducts">
+
+            </tbody>
+        </table>
+    </footer>
+<script src="tienda.js"></script>    
+</body>
+</html>

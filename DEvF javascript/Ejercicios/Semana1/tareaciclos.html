@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+    //     //1. multiplos de 5 
+    //     var numero = prompt("Ingresa un numero mayor a 5:");
+
+    //     for (i=1; i<=numero; i++) {
+    //    // printf("Ingrese numero %d: ",i);
+    //     //scanf("%d",&num);
+ 
+    //     if (i % 5 == 0)
+    //     console.log(i);
+    // }
+
+    // //2.
+    // var i= 0;
+
+    // var numero1 = prompt("Ingresa un numero entre 1-50:");
+    // var numero2 = prompt("Ingresa un numero entre 1-50 :");
+    // do {
+    //    console.log(i);
+    //     if(i == numero1 || i== numero2)
+    //     {
+    //         console.log("Loteria!!");
+    //     }
+    //     i++
+    // } while( i<=50);
+
+    //3.Crea un programa que solicite al usuario números, si lo que este introduce es un número guardarlo en un arreglo. 
+    //Para terminar el capturar el usuario debe ingresar el número 0. Finalmente mostrar la lista de números capturados en pantalla o en la consola.
+   // var i = prompt("Ingresa un numero ");
+    var array  =[];
+    i= 1;
+    var getnumber = 0;
+
+    while (i != 0) 
+	{  debugger
+        //no se repita
+        const getnumber = array.find(array => array === i);
+       // console.log(getnumber);
+       //no sea letra y no lo encuentre en array
+        if(isNaN(i) == false && i !=getnumber )
+        { 
+            array.push(i);
+        }
+        var i = prompt("Ingresa un numero ");
+        console.log(array);
+       
+	}
+
+    //4.
+
+    
+    
+    
+    
+        
+        
+    
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1.crear un arreglo llenarlo e imprimirlo en consola
+         var array = [];
+
+         array.push("Fresa");
+         array.push("Naranja");
+         array.push("Platano");
+         console.log({array})
+
+         //2.El usuario ingresa una cadena separada por coma .llenar un arreglo
+         var entrada =[];
+         var ingreso = prompt("Ingresa la oracion:");
+
+         entrada=ingreso.split(",");
+         console.log({entrada})
+
+         //3.De acuerdo al array [10,40,30,20,15,5], imprime lo siguiente: El arreglo ordenado de menor a mayor, muestra el número menor y el número mayor.
+         // Tip: Busca en google los métodos de JavaScript que regresan el mayor y menor elemento de un arreglo.
+
+         //ordenar Sort()
+         var arreglo1 = [10,40,30,20,15,5];
+
+        var orden = arreglo1.sort((a,b)=>{
+        return a-b;
+        }); 
+        console.log(orden);
+
+        //menor
+        var menor = Math.min(...arreglo1);
+        console.log(menor,"Es menor")
+        //mayor
+        var mayor = Math.max(...arreglo1);
+        console.log(mayor,"Es el mayor")
+
+    </script>
+    
+</body>
+</html>
